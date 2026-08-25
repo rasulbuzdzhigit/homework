@@ -33,4 +33,4 @@ const buyProduct = (budget) => {
 };
 
   buyProduct(100);
-  buyProduct(80);
+  buyProduct(90);
