@@ -5,16 +5,22 @@ console.log(moreThanFour);
 
 
 const macbooks = [
-  { name: "MacBook Pro M1", price: 1499 },
-  { name: "MacBook Pro M2", price: 1999 },
-  { name: "MacBook Pro Intel", price: 1299 },
-  { name: "MacBook Pro M3", price: 2499 },
-  { name: "MacBook Pro M4", price: 2999 },
-  { name: "MacBook Pro M5", price: 3499 },
+  "MacBook Pro M1",
+  "MacBook Pro M2",
+  "MacBook Pro Intel",
+  "MacBook Pro M3",
+  "MacBook Pro M4",
+  "MacBook Pro M5"
 ];
 
-const findIntelMacbook = macbooks.find((macbook) => macbook.name.includes("Intel"));
-console.log(findIntelMacbook);
+const findIntelMacbook = (macbook) => {
+  if (typeof macbook !== "string"){
+    return "Неккоректные входные параметры";
+  }
+  return macbooks.includes(macbook);
+}
+
+console.log(findIntelMacbook("MacBook Pro Intel"));
 
 
 const reverseArray = (array) => {
