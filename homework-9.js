@@ -10,7 +10,7 @@ const macbooks = [
   "MacBook Pro Intel",
   "MacBook Pro M3",
   "MacBook Pro M4",
-  "MacBook Pro M5"
+  "MacBook Pro M6"
 ];
 
 const findIntelMacbook = (macbook) => {
