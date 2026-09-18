@@ -34,10 +34,10 @@ console.log(carInfo.maxSpeed);
 // 5: создал функцию которая проверяет есть ли у обьекта carInfo свойство maxSpeed, если есть то возвращает его, если нет то добавляет его со значением 300
 
 const outputValue = (carInfo, model) => {
-  console.log(carInfo[model]);
+  return carInfo[model];
 };
 
-outputValue(carInfo, "model");
+console.log(outputValue(carInfo, "model"))
 // 6: создал функцию которая выводит значение свойства обьекта carInfo по ключу model
 
 const productList = ["яйца", "мука", "сахар", "молоко", "масло", "сыр"];
