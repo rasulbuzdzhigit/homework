@@ -13,8 +13,8 @@ const macbooks = [
   { name: "MacBook Pro M5", price: 3499 },
 ];
 
-const findIntelMacbook = macbooks.find((macbook) => macbook.name.includes("Intel"));
-console.log(findIntelMacbook);
+const findMacbook = macbooks.find((macbook) => macbook.name.includes("Intel"));
+console.log(findMacbook);
 
 
 const reverseArray = (array) => {
