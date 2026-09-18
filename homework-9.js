@@ -13,14 +13,14 @@ const macbooks = [
   "MacBook Pro M6"
 ];
 
-const findIntelMacbook = (macbook) => {
+const findMacbook = (macbook) => {
   if (typeof macbook !== "string"){
     return "Неккоректные входные параметры";
   }
   return macbooks.includes(macbook);
 }
 
-console.log(findIntelMacbook("MacBook Pro Intel"));
+console.log(findMacbook("MacBook Pro Intel"));
 
 
 const reverseArray = (array) => {
